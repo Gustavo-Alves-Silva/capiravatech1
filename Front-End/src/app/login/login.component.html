@@ -1,0 +1,30 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<title>CapivaraTECH - Login</title>
+<body>
+    
+
+    <div class="containerCentral">
+        <div class="cont1">
+            <h3 class="acesse">Acesse a sua <br></h3>
+            <h3 class="conta">conta</h3>
+            <h3 class="capivaraText">capivara</h3>
+            <h3 class="exclamacao">!</h3>
+        </div>
+        <form #loginForm="ngForm" class="formlogin">
+        <div class="cont2">
+<input id="usuario" type="text" class="inputUsuario" placeholder="email">
+<input id="senha" type="password" class="inputSenha" placeholder="Senha">
+<br>
+<a class="esqueciSenha">Esqueci minha senha</a>
+            
+        </div>
+        <div class="cont3">
+            <!-- <button class="">Criar</button> -->
+            <a routerLink="/cadastroUser"><button type="button" class="botaoCriar" data-toggle="modal" data-target="#addUserModal">Criar</button></a>
+            <a routerLink="/home"><button class="botaoEntrar">Entrar</button></a>
+            <!-- (click)="onLoginUser(loginForm.value.usuario, loginForm.value.senha)" -->
+        </div>
+    </form>
+    </div>
+
+</body>
